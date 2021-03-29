@@ -1,31 +1,29 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<!--<GridPane fx:controller="sample.Controller"-->
-<!--          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">-->
-<!--</GridPane>-->
-<?import javafx.scene.layout.VBox?>
-<?import java.net.URL?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<VBox fx:controller="sample.Controller"
-      xmlns:fx="http://javafx.com/fxml" alignment="center" >
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
 
     <stylesheets>
-        <URL value="@/css/style.css"/>
+        <URL value="@/css/style.css" />
     </stylesheets>
 
-    <TextArea fx:id="textArea" prefWidth="400" minWidth="300" maxWidth="350" minHeight="700" />
+    <TextArea fx:id="textArea" maxWidth="350" minHeight="600" >
+      <VBox.margin>
+         <Insets bottom="10" />
+      </VBox.margin></TextArea>
 
-    <TextField fx:id="textField" onAction="#clickSend1" prefWidth="400" minWidth="300" maxWidth="350"/>
+    <TextField fx:id="textField" onAction="#clickSend1" maxWidth="350">
+      <VBox.margin>
+         <Insets bottom="10" />
+      </VBox.margin></TextField>
 
-    <Button text="Send" onAction = "#clickSend1" prefWidth="400" minWidth="300" maxWidth="350"/>
-
-<!--    <Button text="Send1" onAction = "#clickSend"  />-->
-
-
-
+    <Button text="Send" onAction="#clickSend1" maxWidth="350">
+      <VBox.margin>
+         <Insets bottom="10" />
+      </VBox.margin></Button>
 
 </VBox>

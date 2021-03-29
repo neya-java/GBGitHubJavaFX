@@ -14,6 +14,7 @@ public class Main extends Application {
         primaryStage.setTitle("MyChat");
         primaryStage.setScene(new Scene(root, 400, 800));
         primaryStage.show();
+        
     }
 
 
